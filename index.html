@@ -4,83 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rishabh Goel's portfolio page</title>
-    <link href="./style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./style.css"/>
   </head>
   <body>
-    <nav>
-      <div id="navbar">
-      <ul id="nav-items">
-        <li class="nav-list">About Me</li>
-        <li class="nav-list">Projects
-        </li>
-        <li class="nav-list">Skills</li>
-        <li class="nav-list">Contact</li>
-      </ul>
-    </div>
-    </nav>
+
     <header>
-    <h1 id="page-heading">Hi, I'm Rishabh Goel</h1>
+      <nav>
+        <div id="navbar">
+          <ul id="nav-items">
+            <li class="nav-list"><a href="#about">About Me</a></li>
+            <li class="nav-list"><a href="#projects">Projects</a>
+            </li>
+            <li class="nav-list"><a href="#skills">Skills</a></li>
+            <li class="nav-list"><a href="#contact">Contact</a></li>
+            <li class="nav-list"><a href="./trial.html">Trial page</a></li>
+          </ul>
+        </div>
+    </nav>
     </header>
+
     <main>
-      <img src="./divider.svg" class="divider"/>
-      <img src="./divider.svg" class="divider"/>
-      <img src="./divider.svg" class="divider"/>
-      <img src="./divider.svg" class="divider"/>
-      <img src="./divider.svg" class="divider"/>
-      <img src="./divider.svg" class="divider"/>
+      <h1 id="page-heading">Hi, I'm Rishabh Goel</h1>
+
       <img src="./divider.svg" class="divider"/>
 
-      <div>
-        <img src="./profile_pic.jpeg" id="profile-pic"/>
+      <section id="about">
+
+        <h2>About Me</h2>
+        <div class="container">
+
+          <img src="./profile_pic.jpeg" id="profile-pic" alt="My Picture">
+          <div class="text-pointers">
+              <div class="text-pointer">Coding</div>
+              <div class="text-pointer">Product Management</div>
+              <div class="text-pointer">IIM-A, IIT-K</div>
+          </div>
       </div>
-      <div>
-        <ol>
-          <li>Coding</li>
-          <li>Product Management</li>
-          <li>IIM-A, IIT-K</li>
-        </ol>
-      </div>
-      <img src="./divider.svg" class="divider"/>
-      <img src="./divider.svg" class="divider"/>
-      <img src="./divider.svg" class="divider"/>
-      <img src="./divider.svg" class="divider"/>
-      <img src="./divider.svg" class="divider"/>
-      <img src="./divider.svg" class="divider"/>
+    </section>
+
       <img src="./divider.svg" class="divider"/>
       <div id="projects">
+      <section id="projects">
         <h2>Personal Projects</h2>
-        <div class="click-box">
-          <p>Random message generator</p>
-        </div>
+        <a href="rmg.html">
+          <div class="click-box"><p>Random greeting generator</p></div>
+      </a>
         <div class="click-box">
           <p>Music player</p>
         </div>
+        <div class="click-box">
+          <p>Project 3</p>
+        </div>
       </div>
+    </section>
       <img src="./divider.svg" class="divider"/>
-      <img src="./divider.svg" class="divider"/>
-      <img src="./divider.svg" class="divider"/>
-      <img src="./divider.svg" class="divider"/>
-      <img src="./divider.svg" class="divider"/>
-      <img src="./divider.svg" class="divider"/>
-      <img src="./divider.svg" class="divider"/>
-      <div id="skills">
+      <section id="skills">
+      <div>
         <h2>Skills</h2>
-        <img src="./Unofficial_JavaScript_logo_2.svg" class="logo" />
+        <img src="./html_css_js.png" class="logo" />
       </div>
+    </section>
       <img src="./divider.svg" class="divider"/>
-      <img src="./divider.svg" class="divider"/>
-      <img src="./divider.svg" class="divider"/>
-      <img src="./divider.svg" class="divider"/>
-      <img src="./divider.svg" class="divider"/>
-      <img src="./divider.svg" class="divider"/>
-      <img src="./divider.svg" class="divider"/>
-      <div id="contact">
+      <section id="contact">
+        <div>
+
         <h2>Contact Details:</h2>
         <p>Email: rishabhg0707@gmail.com</p>
         <p>Phone no: +44 7443888379</p>
       </div>
-
+    </section>
     </main>
+    <footer>
+      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
   </body>
 
 </html>
