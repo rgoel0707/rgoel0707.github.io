@@ -1,0 +1,30 @@
+#navbar, #nav-items, .nav-list {
+  display: inline;
+  background-color: aquamarine;
+  color: darkgreen;
+  justify-content: space-between;
+  margin: 100px 50px;
+}
+
+#page-heading{
+  text-align: center;
+
+}
+
+.divider {
+  max-width: 500px;
+  display: inline;
+  max-height: 10px;
+  margin: 30px 10px 30px 10px;
+}
+
+#profile-pic {
+  max-width: 200px;
+  max-height: 300px;
+
+}
+
+.logo{
+  max-width: 20px;
+  max-height: 30px;
+}
