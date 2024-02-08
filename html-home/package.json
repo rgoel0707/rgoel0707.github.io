@@ -1,0 +1,22 @@
+{
+  "name": "rgoel0707",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rmg.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgoel0707/rgoel0707.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rgoel0707/rgoel0707.github.io/issues"
+  },
+  "homepage": "https://github.com/rgoel0707/rgoel0707.github.io#readme",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
