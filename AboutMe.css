@@ -1,0 +1,126 @@
+#about-div {
+  margin: 40px 0 40px 0;
+}
+
+#name-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+#name-div .rounded-image {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+#line1 {
+  font-size: 1.2em;
+  color: var(--font-col);
+  margin-bottom: 8px;
+}
+
+#my-name {
+  font-size: 48px;
+  color: var(--font-col);
+  font-weight: bold;
+}
+
+#highlights-div {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.highlight-tile {
+  width: 50%;
+  height: 140px;
+  margin: 16px;
+  background-image: linear-gradient(to top, var(--main-accent), var(--accent-top));
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  text-align: center;
+  font-size: 16px;
+  overflow: scroll;
+}
+
+.tile-name {
+  font-weight: bold;
+  margin-top: 16px;
+  height: 30%;
+}
+
+.highlight-tile em,
+.highlight-tile p,
+.highlight-tile li,
+.highlight-tile u {
+  color: var(--secondary-font-col);
+}
+
+#skill-list,
+#quals {
+  list-style: none;
+}
+
+#skill-list li,
+#quals li {
+  margin-bottom: 12px;
+}
+
+.right-button {
+  display: block;
+}
+
+.buttons-div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 36%;
+}
+
+.buttons-div button {
+  opacity: .55;
+  height: 75px;
+  font-size: 24px;
+  width: 75px;
+  color: rgba(7, 18, 38, .75);
+  transition: opacity 250ms, color 250ms;
+}
+
+.buttons-div button:hover {
+  opacity: 1;
+  color: rgba(7, 18, 38, 1);
+}
+
+
+@media only screen and (max-width:600px) {
+  .highlight-tile {
+    width: 100%;
+
+  }
+
+  .highlight-tile.prev {
+    display: none;
+  }
+
+  .buttons-div button {
+    height: 55px;
+    font-size: 16px;
+    width: 55px;
+  }
+
+  .buttons-div {
+    width: 135%;
+    top: 40%;
+  }
+}

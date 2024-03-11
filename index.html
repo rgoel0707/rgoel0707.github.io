@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rishabh Goel's portfolio page</title>
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./App.css" />
+  <link rel="stylesheet" href="./AboutMe.css" />
 </head>
 
 <body>
@@ -14,74 +15,60 @@
     <nav>
       <div id="navbar">
         <ul id="nav-items">
-          <li class="nav-list"><a href="#about">About Me</a></li>
-          <li class="nav-list"><a href="#projects">Projects</a>
-          </li>
-          <li class="nav-list"><a href="#skills">Skills</a></li>
-          <li class="nav-list"><a href="#contact">Contact</a></li>
-          <li class="nav-list"><a href="./trial.html">Trial page</a></li>
+          <li class="nav-list"><a href="#">About Me</a></li>
+          <li class="nav-list"><a href="./projects.html">Projects</a></li>
+          <li class="nav-list"><a href="./contacts.html">Contact</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
   <main>
-    <h1 id="page-heading">Rishabh Goel</h1>
+    <div class="about-me-page">
+      <div class="about-me-bg-1"></div>
+      <div class="about-me-bg-2"></div>
+      <main class='page-container'>
+        <section id="about">
+          <div id='about-div'>
+            <div id='name-div'>
+              <img src="./pics/profile_pic.png" alt='rishabh' class="rounded-image"></img>
+              <p id='line1'>Hi,</p>
+              <p id='my-name'>I'm Rishabh</p>
+            </div>
+            <div id="highlights-div">
+              <div class='about-me-tiles highlight-tile'>
+                <p class='tile-name'>Summary</p>
+                <p>I'm a budding developer passionate about coding and creating meaningful projects. I have worked as a
+                  product manager for last 6 years, and am now venturing into the world of programming</p>
+              </div>
+              <div class='about-me-tiles highlight-tile'>
+                <p class='tile-name'>Skills</p>
+                <ul id='skill-list'>
+                  <li>HTML | CSS | ReactJS</li>
+                  <li>JavaScript | Python</li>
+                  <li>Redux | ExpressJS | Github</li>
+                </ul>
+              </div>
+              <div class='about-me-tiles highlight-tile'>
+                <p class='tile-name'>Qualifications</p>
+                <ul id='quals'>
+                  <li>B.Tech. from IIT Kanpur</li>
+                  <li>Front-end developer certification from CodeAcademy</li>
+                  <li>MBA from IIM Ahmedabad</li>
+                </ul>
+              </div>
 
-    <img src="./divider.svg" class="divider" />
 
-    <section id="about">
-
-      <h2>About Me</h2>
-      <div class="container">
-
-        <img src="./profile_pic.jpeg" id="profile-pic" alt="My Picture">
-        <!--<div class="text-pointers">
-              <div class="text-pointer">Coding</div>
-              <div class="text-pointer">Product Management</div>
-              <div class="text-pointer">IIM-A, IIT-K</div>
-          </div>-->
-        <p>Hi, I'm Rishabh Goel, a budding developer passionate about coding and creating meaningful projects. I have worked as a product manager for last 6 years, and am now venturing into the world of programming. My Bachelors (B.Tech.) and Masters(MBA) degrees are from IIT Kanpur and IIM Ahmedabad respectively.</p>
-      </div>
-    </section>
-
-    <img src="./divider.svg" class="divider" />
-    <div id="projects">
-      <section id="projects">
-        <h2>Personal Projects</h2>
-        <a href="rmg.html">
-          <div class="click-box">
-            <p>Random greeting generator</p>
+            </div>
           </div>
-        </a>
-        <div class="click-box">
-          <p>Music player</p>
-        </div>
-        <div class="click-box">
-          <p>Project 3</p>
-        </div>
+        </section>
+      </main>
+      <footer id='about-me-footer'>
+        <p>&copy; 2024 Rishabh Goel. All rights reserved. V1.1</p>
+      </footer>
     </div>
-    </section>
-    <img src="./divider.svg" class="divider" />
-    <section id="skills">
-      <div>
-        <h2>Skills</h2>
-        <img src="./html_css_js.png" class="logo" />
-      </div>
-    </section>
-    <img src="./divider.svg" class="divider" />
-    <section id="contact">
-      <div>
 
-        <h2>Contact Details:</h2>
-        <p>Email: rishabhg0707@gmail.com</p>
-        <p>Phone no: +44 7443888379</p>
-      </div>
-    </section>
   </main>
-  <footer>
-    <p>&copy; 2024 My Portfolio. All rights reserved.</p>
-  </footer>
 </body>
 
 </html>
