@@ -1,0 +1,162 @@
+#about-div {
+  margin: 40px 0 40px 0;
+}
+
+#name-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+#name-div .rounded-image {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+#line1 {
+  font-size: 1.2em;
+  color: var(--font-col);
+  margin-bottom: 8px;
+}
+
+#my-name {
+  font-size: 48px;
+  color: var(--font-col);
+  font-weight: bold;
+}
+
+#highlights-div {}
+
+.highlight-container {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  overflow: visible;
+  justify-content: center;
+  position: relative;
+}
+
+.highlight-tile {
+  width: 350px;
+  height: 240px;
+  margin: 16px;
+  background-image: linear-gradient(to top, var(--main-accent), var(--accent-top));
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  overflow: scroll;
+}
+
+.about-me-tiles {
+  height: 100%;
+}
+
+.tile-name {
+  font-weight: bold;
+  margin-top: 16px;
+  height: 30%;
+}
+
+.highlight-tile em,
+.highlight-tile p,
+.highlight-tile li,
+.highlight-tile u {
+  color: var(--secondary-font-col);
+}
+
+#skill-list,
+#quals {
+  list-style: none;
+}
+
+#skill-list li,
+#quals li {
+  margin-bottom: 12px;
+}
+
+.right-button {
+  display: block;
+}
+
+.highlight-tile.inactive {
+  display: none;
+}
+
+.highlight-tile.next {
+  background: linear-gradient(to left, transparent, rgba(82, 132, 108, 0.1), rgba(82, 132, 108, 0.4));
+
+}
+
+.highlight-tile.next p, .highlight-tile.next li{
+  background-image: linear-gradient(to left, transparent, rgba(82, 132, 108, 0.3), rgba(82, 132, 108, 0.4));
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  color: transparent; /* Make the text color transparent */
+}
+
+
+.highlight-tile.prev {
+  background: linear-gradient(to right, transparent, rgba(82, 132, 108, 0.1), rgba(82, 132, 108, 0.4));
+}
+
+.highlight-tile.prev p, .highlight-tile.prev li{
+  background-image: linear-gradient(to right, transparent, rgba(82, 132, 108, 0.3), rgba(82, 132, 108, 0.4));
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  color: transparent; /* Make the text color transparent */
+}
+
+.buttons-div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 36%;
+}
+
+.buttons-div button {
+  opacity: .55;
+  height: 75px;
+  font-size: 24px;
+  width: 75px;
+  color: rgba(7, 18, 38, .75);
+  transition: opacity 250ms, color 250ms;
+}
+
+.buttons-div button:hover {
+  opacity: 1;
+  color: rgba(7, 18, 38, 1);
+}
+
+
+@media only screen and (max-width:600px) {
+  .highlight-tile.next {
+    display: none;
+
+  }
+
+  .highlight-tile.prev {
+    display: none;
+  }
+
+  .buttons-div button {
+    height: 55px;
+    font-size: 16px;
+    width: 55px;
+  }
+
+  .buttons-div {
+    width: 135%;
+    top: 40%;
+  }
+}

@@ -1,0 +1,73 @@
+.spc-page {
+  color: white;
+}
+
+.spc-page-div{
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width:600px) {
+  .spc-page-div{
+    display: block;
+  }
+  .top-div{
+    width: 90%;}
+}
+
+.top-div{
+display: block;
+width: 40%;
+background-image: linear-gradient(to top, var(--main-accent), var(--accent-top));
+border: 0;
+border-radius: 16px;
+padding: 16px;
+margin: 16px;
+}
+
+.next-div{
+  display: flex;
+  flex-direction: column;
+}
+#song-searchbar {
+border: 0;
+text-align: center;
+}
+.spc-button{
+
+}
+.lvl-2-div{
+margin-top: 16px;
+padding-left: 10px;
+}
+.spc-header{
+font-weight: bold;
+font-size: 20px;
+margin-bottom: 16px;
+}
+.song-div{
+display: flex;
+align-items: center;
+}
+
+.song-details{
+  width: 80%;
+white-space: nowrap;
+overflow: clip;
+margin-right: 16px;
+}
+
+.artist{
+  font-size: 12px;
+}
+
+.add-btn{
+background-color: transparent;
+color: white;
+font-size: 24px;
+}
+
+
+#playlist-name{
+border: 0;
+text-align: center;
+}
